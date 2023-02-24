@@ -1,0 +1,64 @@
+type Event {
+  source: String!
+  #timestamp
+  datetime: Int!
+  title: String!
+  detail: Info!
+}
+
+type Info{
+    disease: Disease!
+    location: Country!
+    link: String!
+    stat: Statistic
+}
+
+type Statistic {
+    dailyIncrease: Int
+    dailyDeath: Int
+    totalDeath: Int
+    totalCases: Int
+}
+type Disease {
+    name: String!
+}
+type Country {
+    name: String!
+    total_events: Int
+}
+
+type Query {
+    """
+    Returns Events happened
+    """
+    getEvents: [Event]
+
+    """
+    Returns Events only from secific source
+    """
+    getEventsBysource(source: String): [Event]
+
+    """
+    Returns Events only happened in from secific country
+    """
+    getEventsByCountry(Country: String): [Event]
+
+    """
+    Returns all existing diseases
+    """
+    getAllDiseases: [Disease]
+
+    """
+    Returns most reported disease
+    """
+    getTopDisease: Disease
+
+    """
+    Returns all countries
+    """
+    getAllCountries: [Country]
+
+
+
+
+}
