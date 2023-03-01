@@ -1,13 +1,26 @@
-type Event {
-  source: String!
-  #timestamp
-  datetime: Int!
-  title: String!
-  detail: Info!
+type EventDataSet {
+  dataset_id: String!
+  data_source: String!
+  dataset_type: String!
+  time_object: TimeObject!
+  events: [Event]
 }
 
-type Info{
-    disease: Disease!
+type TimeObject {
+    timestamp: String!
+    timezone: String
+}
+
+type Event {
+  time_object: TimeObject!
+  event_type: String!
+  attribute: attribute!
+  
+}
+
+type attribute {
+    title: String!
+    disease: String
     location: Country!
     link: String!
     stat: Statistic
@@ -29,19 +42,19 @@ type Country {
 
 type Query {
     """
-    Returns Events happened
+    Returns Events happened from all source(all dataset)
     """
-    getEvents: [Event]
+    getEventsDataset: [EventDataSet]
 
     """
     Returns Events only from secific source
     """
-    getEventsBysource(source: String): [Event]
+    getEventsBysource(source: String): EventDataSet
 
     """
     Returns Events only happened in from secific country
     """
-    getEventsByCountry(Country: String): [Event]
+    getEventsByCountry(country: String): [Event]
 
     """
     Returns all existing diseases
@@ -52,13 +65,5 @@ type Query {
     Returns most reported disease
     """
     getTopDisease: Disease
-
-    """
-    Returns all countries
-    """
-    getAllCountries: [Country]
-
-
-
 
 }

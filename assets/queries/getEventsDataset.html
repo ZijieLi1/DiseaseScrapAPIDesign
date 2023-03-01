@@ -37,7 +37,7 @@
 		<link rel="modulepreload" href="../_app/immutable/chunks/DirectiveTag-0b3ab76a.js">
 		<link rel="modulepreload" href="../_app/immutable/modules/pages/queries/_query_/_page.ts-a901ed25.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-b40a4f3c.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page-0637c964.js"><title>Query - getTopDisease</title><!-- HEAD_svelte-w4mdaz_START --><meta name="keywords" content="graphql,api,documentation,Diseases events scrapping API"><meta name="description" content="Diseases events scrapping API's GraphQL documentation"><meta name="og:title" content="Diseases events scrapping API"><meta name="og:type" content="article"><meta name="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.sierrainstruments.com%2Fimages%2Flogo%2Fsierra-logo-black-print.jpg&amp;f=1&amp;nofb=1&amp;ipt=9d9409e106120e1f754645b9e8c02a352b00003afcbe28aceef412ae81f54b98&amp;ipo=images"><meta name="og:site_name" content="Diseases events scrapping API"><meta name="og:description" content="Diseases events scrapping API's GraphQL documentation"><!-- HEAD_svelte-w4mdaz_END --><!-- HEAD_svelte-19yffit_START --><!-- HEAD_svelte-19yffit_END -->
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-0637c964.js"><title>Query - getEventsDataset</title><!-- HEAD_svelte-w4mdaz_START --><meta name="keywords" content="graphql,api,documentation,Diseases events scrapping API"><meta name="description" content="Diseases events scrapping API's GraphQL documentation"><meta name="og:title" content="Diseases events scrapping API"><meta name="og:type" content="article"><meta name="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.sierrainstruments.com%2Fimages%2Flogo%2Fsierra-logo-black-print.jpg&amp;f=1&amp;nofb=1&amp;ipt=9d9409e106120e1f754645b9e8c02a352b00003afcbe28aceef412ae81f54b98&amp;ipo=images"><meta name="og:site_name" content="Diseases events scrapping API"><meta name="og:description" content="Diseases events scrapping API's GraphQL documentation"><!-- HEAD_svelte-w4mdaz_END --><!-- HEAD_svelte-19yffit_START --><!-- HEAD_svelte-19yffit_END -->
   </head>
   <body>
     <div style="display: contents">
@@ -68,7 +68,7 @@
         <li class="bx--side-nav__item"><button type="button" aria-expanded class="bx--side-nav__submenu">
     <span class="bx--side-nav__submenu-title">Queries</span>
     <div class="bx--side-nav__icon bx--side-nav__icon--small bx--side-nav__submenu-chevron"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg></div></button>
-  <ul role="menu" style="max-height: none" class="bx--side-nav__menu"><li class="bx--side-nav__menu-item"><a href="/queries/getAllDiseases" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getAllDiseases</span></a></li><li class="bx--side-nav__menu-item"><a href="/queries/getEventsByCountry" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getEventsByCountry</span></a></li><li class="bx--side-nav__menu-item"><a href="/queries/getEventsBysource" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getEventsBysource</span></a></li><li class="bx--side-nav__menu-item"><a href="/queries/getEventsDataset" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getEventsDataset</span></a></li><li class="bx--side-nav__menu-item"><a aria-current="page" href="/queries/getTopDisease" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getTopDisease</span></a></li>
+  <ul role="menu" style="max-height: none" class="bx--side-nav__menu"><li class="bx--side-nav__menu-item"><a href="/queries/getAllDiseases" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getAllDiseases</span></a></li><li class="bx--side-nav__menu-item"><a href="/queries/getEventsByCountry" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getEventsByCountry</span></a></li><li class="bx--side-nav__menu-item"><a href="/queries/getEventsBysource" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getEventsBysource</span></a></li><li class="bx--side-nav__menu-item"><a aria-current="page" href="/queries/getEventsDataset" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getEventsDataset</span></a></li><li class="bx--side-nav__menu-item"><a href="/queries/getTopDisease" class=" bx--side-nav__link"><span class="bx--side-nav__link-text">getTopDisease</span></a></li>
         </ul></li>
         <li class="bx--side-nav__item"><button type="button" aria-expanded class="bx--side-nav__submenu">
     <span class="bx--side-nav__submenu-title">Types</span>
@@ -80,15 +80,15 @@
 
 <section>
 
-  <div class="parent svelte-1jlumb"><h1 id="title" class="header header-base svelte-1jlumb">getTopDisease
-<div id="ccs-0.sbmbpqrmb7e" class="bx--tag         bx--tag--green     ">
+  <div class="parent svelte-1jlumb"><h1 id="title" class="header header-base svelte-1jlumb">getEventsDataset
+<div id="ccs-0.7ln5zopea9v" class="bx--tag         bx--tag--green     ">
     <span>Query</span></div>
 
     </h1>
   
 </div>
 
-  <p class="md-paragraph svelte-uzcm98">Returns most reported disease
+  <p class="md-paragraph svelte-uzcm98">Returns Events happened from all source(all dataset)
 </p>
 
   
@@ -96,9 +96,9 @@
   <div class="parent svelte-1jlumb"><h2 id="response" class="header header-base svelte-1jlumb">Response</h2>
   <h2 class="header-base header-hashtag svelte-1jlumb"><a href="#response" class="hashtag svelte-1jlumb">#</a></h2>
 </div>
-    <p>Returns 
-<a href="/types/Disease" class="bx--link     ">Disease
-    </a>.
+    <p>Returns [
+<a href="/types/EventDataSet" class="bx--link     ">EventDataSet
+    </a>].
     </p>
 
   <div class="parent svelte-1jlumb"><h4 id="example" class="header header-base svelte-1jlumb">Example</h4>
@@ -107,12 +107,12 @@
   <div role="navigation" class="bx--tabs "><div role="listbox" tabindex="0" aria-label="listbox" class="bx--tabs-trigger"><a tabindex="-1" href="#" class="bx--tabs-trigger-text"></a>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true" role="img"><title>Show menu options</title><path d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"></path></svg></div>
   <ul role="tablist" class="bx--tabs__nav bx--tabs__nav--hidden">
-<li tabindex="-1" role="presentation" class="bx--tabs__nav-item  "><a role="tab" tabindex="0" aria-selected="false" aria-disabled="false" id="ccs-0.nkrohfi4rsr" href="#" style="width: auto" class="bx--tabs__nav-link">Query</a></li>
+<li tabindex="-1" role="presentation" class="bx--tabs__nav-item  "><a role="tab" tabindex="0" aria-selected="false" aria-disabled="false" id="ccs-0.ao7b7s38z9" href="#" style="width: auto" class="bx--tabs__nav-link">Query</a></li>
   
-<li tabindex="-1" role="presentation" class="bx--tabs__nav-item  "><a role="tab" tabindex="0" aria-selected="false" aria-disabled="false" id="ccs-0.hsm80rict8" href="#" style="width: auto" class="bx--tabs__nav-link">Variables</a></li>
+<li tabindex="-1" role="presentation" class="bx--tabs__nav-item  "><a role="tab" tabindex="0" aria-selected="false" aria-disabled="false" id="ccs-0.ujy15ed7u37" href="#" style="width: auto" class="bx--tabs__nav-link">Variables</a></li>
   
-<li tabindex="-1" role="presentation" class="bx--tabs__nav-item  "><a role="tab" tabindex="0" aria-selected="false" aria-disabled="false" id="ccs-0.1hjnfnm5f31" href="#" style="width: auto" class="bx--tabs__nav-link">Response</a></li></ul></div>
-<div role="tabpanel" aria-labelledby="ccs-0.nkrohfi4rsr" aria-hidden id="ccs-0.1ol6nwc8jxa" style="padding:0" class="bx--tab-content"><div class="wrapper svelte-1gk78cu"><div class="code-section svelte-1gk78cu"><div class="prism--hide-copy-button"><pre style="min-height: 12rem; max-height: 20rem;"><code></code></pre>
+<li tabindex="-1" role="presentation" class="bx--tabs__nav-item  "><a role="tab" tabindex="0" aria-selected="false" aria-disabled="false" id="ccs-0.dx3cne46mm" href="#" style="width: auto" class="bx--tabs__nav-link">Response</a></li></ul></div>
+<div role="tabpanel" aria-labelledby="ccs-0.ao7b7s38z9" aria-hidden id="ccs-0.m93xflibzc" style="padding:0" class="bx--tab-content"><div class="wrapper svelte-1gk78cu"><div class="code-section svelte-1gk78cu"><div class="prism--hide-copy-button"><pre style="min-height: 12rem; max-height: 20rem;"><code></code></pre>
 </div></div>
   <div class="button-bar svelte-1gk78cu">
 <button type="button" tabindex="0" aria-pressed="false" class="bx--btn true bx--btn--field bx--btn--ghost bx--btn--icon-only bx--tooltip__trigger bx--tooltip--a11y bx--btn--icon-only--left bx--tooltip--align-center"><span class="bx--assistive-text">Copy query</span>
@@ -128,8 +128,8 @@
 <button type="button" tabindex="0" aria-pressed="false" class="bx--btn true bx--btn--field bx--btn--ghost bx--btn--icon-only bx--tooltip__trigger bx--tooltip--a11y bx--btn--icon-only--left bx--tooltip--align-center"><span class="bx--assistive-text">Decrease query depth</span>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="16" height="16" aria-hidden="true" role="img" class="bx--btn__icon" style="margin-left: 0" aria-label="Decrease query depth"><path d="M8 15H24V17H8z"></path></svg></button></div>
 </div></div>
-    <div role="tabpanel" aria-labelledby="ccs-0.hsm80rict8" aria-hidden id="ccs-0.lm9fiz2vv7" style="padding:0" class="bx--tab-content"></div>
-    <div role="tabpanel" aria-labelledby="ccs-0.1hjnfnm5f31" aria-hidden id="ccs-0.uhl313c322" style="padding:0" class="bx--tab-content"></div>
+    <div role="tabpanel" aria-labelledby="ccs-0.ujy15ed7u37" aria-hidden id="ccs-0.8hugewxypnm" style="padding:0" class="bx--tab-content"></div>
+    <div role="tabpanel" aria-labelledby="ccs-0.dx3cne46mm" aria-hidden id="ccs-0.hhxmrl7qg7e" style="padding:0" class="bx--tab-content"></div>
   </section>
 
 <hr class="footer-hr svelte-19tre3a">
@@ -137,23 +137,23 @@
 <div class="wrapper svelte-19tre3a"><div class="previous direction-wrapper svelte-19tre3a"><div class="direction svelte-19tre3a"><strong>Previous
 
           </strong></div>
-      <a href="/queries/getEventsDataset" class="title svelte-19tre3a"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden class="previous-next-arrow"><path d="M14 26L15.41 24.59 7.83 17 28 17 28 15 7.83 15 15.41 7.41 14 6 4 16 14 26z"></path></svg></span>
-        <p>getEventsDataset</p></a></div>
+      <a href="/queries/getEventsBysource" class="title svelte-19tre3a"><span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden class="previous-next-arrow"><path d="M14 26L15.41 24.59 7.83 17 28 17 28 15 7.83 15 15.41 7.41 14 6 4 16 14 26z"></path></svg></span>
+        <p>getEventsBysource</p></a></div>
 
   <div class="next direction-wrapper svelte-19tre3a"><div class="direction svelte-19tre3a"><strong>Next
-          - Types</strong></div>
-      <a href="/types/Boolean" class="title svelte-19tre3a"><p>Boolean</p>
+          </strong></div>
+      <a href="/queries/getTopDisease" class="title svelte-19tre3a"><p>getTopDisease</p>
         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" preserveAspectRatio="xMidYMid meet" width="20" height="20" aria-hidden class="previous-next-arrow"><path d="M18 6L16.57 7.393 24.15 15 4 15 4 17 24.15 17 16.57 24.573 18 26 28 16 18 6z"></path></svg></span></a></div>
 </div></div></div></div></main>
 
 
-		<script type="module" data-sveltekit-hydrate="1vr8d0p">
+		<script type="module" data-sveltekit-hydrate="1o0yeug">
 			import { start } from "../_app/immutable/start-d802f08d.js";
 
 			start({
 				assets: "",
 				env: {},
-				target: document.querySelector('[data-sveltekit-hydrate="1vr8d0p"]').parentNode,
+				target: document.querySelector('[data-sveltekit-hydrate="1o0yeug"]').parentNode,
 				version: "1677652171711",
 				hydrate: {
 					node_ids: [0, 6],
